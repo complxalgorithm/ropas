@@ -1,0 +1,118 @@
+@-webkit-keyframes icon-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes icon-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  90% {
+    opacity: 0;
+  }
+}
+body {
+  background-color: #151e28;
+  color: #edf0f9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#moves {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#moves li {
+  background: #35b197;
+  width: 33.33%;
+  margin: 1em;
+}
+#moves li:hover {
+  background: #4fcab0;
+}
+#moves li:active {
+  background: #f66e3a;
+}
+#moves li .fa {
+  display: block;
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+#moves li .fa.animating {
+  -webkit-animation: icon-animation 2s 1;
+          animation: icon-animation 2s 1;
+}
+#moves li .text {
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.scoreboard {
+  width: 100%;
+}
+.scoreboard table {
+  width: 100%;
+  background: #1a2632;
+}
+.scoreboard table td {
+  padding: .5em;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+}
+.scoreboard table thead {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+.scoreboard table thead td {
+  padding-top: 2em;
+}
+.scoreboard table tbody td {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1em;
+}
